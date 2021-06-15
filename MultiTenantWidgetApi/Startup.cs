@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -12,9 +13,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
-using MultiTenantWidgetApi.DataStore;
 using MultiTenantWidgetApi.Services;
-using SquareWidget.BasicAuth.Core;
 
 namespace MultiTenantWidgetApi
 {
@@ -30,15 +29,13 @@ namespace MultiTenantWidgetApi
         // This method gets called by the runtime. Use this method to add services to the container.
 public void ConfigureServices(IServiceCollection services)
 {
-    services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
-           // services.AddDbContext<MasterDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("MasterDatabase")), ServiceLifetime.Singleton);
-           // services.AddDbContext<WidgetDbContext>();
-            services.AddHttpContextAccessor();
+    services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
+    services.AddHttpContextAccessor();
 
     // basic auth as an example authentication scheme
     services
-    .AddAuthentication(BasicAuthenticationDefaults.AuthenticationScheme)
-    .AddBasicAuthentication<BasicAuthenticationService>();
+    .AddAuthentication("BasicAuthentication")
+    .AddScheme<AuthenticationSchemeOptions, BasicAuthenticationService>("BasicAuthentication", null);
 }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -56,7 +53,15 @@ public void Configure(IApplicationBuilder app, IHostingEnvironment env)
 
     app.UseAuthentication();
     app.UseHttpsRedirection();
-    app.UseMvc();
+    app.UseRouting();
+    app.UseAuthorization();
+    app.UseEndpoints(endpoints =>
+    {
+        endpoints.MapDefaultControllerRoute();
+        // Which is the same as the template
+        endpoints.MapControllerRoute("default", "{controller=Home}/{action=Index}/{id?}");
+    });
+    //app.UseMvc();
 }
     }
 }
