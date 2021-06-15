@@ -70,7 +70,8 @@ namespace MultiTenantWidgetApi.Controllers
 
             // returning an in-memory db instead just for illustration purposes
             var optionsBuilder = new DbContextOptionsBuilder<WidgetDbContext>()
-                .UseInMemoryDatabase(databaseName: settings.TenantId);
+                .UseSqlServer(cn);
+                //.UseInMemoryDatabase(databaseName: settings.TenantId);
 
             return optionsBuilder.Options;
         }

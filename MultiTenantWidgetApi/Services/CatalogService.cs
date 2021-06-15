@@ -32,8 +32,7 @@ public class CatalogService
             //    InitialCatalog = tenant.DatabaseName
             //};
 
-            return _tenantSettings.DefaultConnectionString;
-        //return builder.ConnectionString;
+        return tenant.DatabaseServerName;
     }
 
     /// <summary>
@@ -48,7 +47,7 @@ public class CatalogService
         {
             new Tenant {
                 TenantId = "tenant1",
-                DatabaseServerName = "tcp:tenant1.database.windows.net,1433",
+                DatabaseServerName = "Data Source=\"CYG444\\SQLEXPRESS\";User ID=\"root\";Password=\"shoot\";Initial Catalog=\"database1\";Integrated Security=False;Connect Timeout=120",
                 DatabaseName = "tenant1db"
             },
             new Tenant {
