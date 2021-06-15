@@ -1,0 +1,17 @@
+C:\Users\mansha.madaan\Desktop\multi_tenant\MultiTenantWidgetApi\MultiTenantWidgetApi\bin\Debug\netcoreapp2.2\appsettings.Development.json
+C:\Users\mansha.madaan\Desktop\multi_tenant\MultiTenantWidgetApi\MultiTenantWidgetApi\bin\Debug\netcoreapp2.2\appsettings.json
+C:\Users\mansha.madaan\Desktop\multi_tenant\MultiTenantWidgetApi\MultiTenantWidgetApi\bin\Debug\netcoreapp2.2\MultiTenantWidgetApi.deps.json
+C:\Users\mansha.madaan\Desktop\multi_tenant\MultiTenantWidgetApi\MultiTenantWidgetApi\bin\Debug\netcoreapp2.2\MultiTenantWidgetApi.runtimeconfig.json
+C:\Users\mansha.madaan\Desktop\multi_tenant\MultiTenantWidgetApi\MultiTenantWidgetApi\bin\Debug\netcoreapp2.2\MultiTenantWidgetApi.runtimeconfig.dev.json
+C:\Users\mansha.madaan\Desktop\multi_tenant\MultiTenantWidgetApi\MultiTenantWidgetApi\bin\Debug\netcoreapp2.2\MultiTenantWidgetApi.dll
+C:\Users\mansha.madaan\Desktop\multi_tenant\MultiTenantWidgetApi\MultiTenantWidgetApi\bin\Debug\netcoreapp2.2\MultiTenantWidgetApi.pdb
+C:\Users\mansha.madaan\Desktop\multi_tenant\MultiTenantWidgetApi\MultiTenantWidgetApi\obj\Debug\netcoreapp2.2\MultiTenantWidgetApi.csproj.AssemblyReference.cache
+C:\Users\mansha.madaan\Desktop\multi_tenant\MultiTenantWidgetApi\MultiTenantWidgetApi\obj\Debug\netcoreapp2.2\MultiTenantWidgetApi.AssemblyInfoInputs.cache
+C:\Users\mansha.madaan\Desktop\multi_tenant\MultiTenantWidgetApi\MultiTenantWidgetApi\obj\Debug\netcoreapp2.2\MultiTenantWidgetApi.AssemblyInfo.cs
+C:\Users\mansha.madaan\Desktop\multi_tenant\MultiTenantWidgetApi\MultiTenantWidgetApi\obj\Debug\netcoreapp2.2\MultiTenantWidgetApi.csproj.CoreCompileInputs.cache
+C:\Users\mansha.madaan\Desktop\multi_tenant\MultiTenantWidgetApi\MultiTenantWidgetApi\obj\Debug\netcoreapp2.2\MultiTenantWidgetApi.RazorAssemblyInfo.cache
+C:\Users\mansha.madaan\Desktop\multi_tenant\MultiTenantWidgetApi\MultiTenantWidgetApi\obj\Debug\netcoreapp2.2\MultiTenantWidgetApi.RazorAssemblyInfo.cs
+C:\Users\mansha.madaan\Desktop\multi_tenant\MultiTenantWidgetApi\MultiTenantWidgetApi\obj\Debug\netcoreapp2.2\MultiTenantWidgetApi.RazorTargetAssemblyInfo.cache
+C:\Users\mansha.madaan\Desktop\multi_tenant\MultiTenantWidgetApi\MultiTenantWidgetApi\obj\Debug\netcoreapp2.2\MultiTenantWidgetApi.dll
+C:\Users\mansha.madaan\Desktop\multi_tenant\MultiTenantWidgetApi\MultiTenantWidgetApi\obj\Debug\netcoreapp2.2\MultiTenantWidgetApi.pdb
+C:\Users\mansha.madaan\Desktop\multi_tenant\MultiTenantWidgetApi\MultiTenantWidgetApi\obj\Debug\netcoreapp2.2\MultiTenantWidgetApi.genruntimeconfig.cache
